@@ -9,6 +9,7 @@ export const ActionButton = ( { active, onPress, display } ) => {
       <Text style={styles.contextButtonText}>{display}</Text>
     </Pressable>
   );
+  
 };
 
 const styles = StyleSheet.create({

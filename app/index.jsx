@@ -34,20 +34,22 @@ export default function Index() {
       <View style={styles.actions}>
         <View style={styles.context}>
           {pomodoro.map(p =>
+
             <ActionButton 
               key={p.id}
               active={timerType.id === p.id}
               onPress={() => setTimerType(p)}
               display={p.display}
-            
             />
-          // <Pressable 
-          //   key={p.id} 
-          //   style={ timerType.id === p.id ? styles.contextButtonActive : null}
-          //   onPress={() => setTimerType(p)}
-          //   >
-          //   <Text style={styles.contextButtonText}>{p.display}</Text>
-          // </Pressable>
+
+          //   <Pressable 
+            //   key={p.id} 
+            //   style={ timerType.id === p.id ? styles.contextButtonActive : null}
+            //   onPress={() => setTimerType(p)}
+            //   >
+            //   <Text style={styles.contextButtonText}>{p.display}</Text>
+          //  </Pressable>
+         
           )}
 
         </View>
