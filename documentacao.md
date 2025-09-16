@@ -15,3 +15,14 @@
 1. require() -> Faz com que você consiga passar um caminho da img que está dentro do projeto.
 2. create() -> Utilizada quando você quer criar algo.
 3. StyleSheet -> Utilizado para criar um campo de estilização.
+
+
+## CRIAÇÃO DO COMPONENT Timer
+O código que você irá utilizar nesse componente é:
+ <Text style={styles.timer}>
+
+{timerType.initialValue} */}
+{new Date(timerType.initialValue * 1000).toLocaleTimeString("pt-BR", { minute: "2-digit", second: "2-digit"
+
+})}
+</Text>
